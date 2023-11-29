@@ -1,20 +1,19 @@
 {
-  "name": "first",
+  "name": "second",
   "version": "1.0.0",
-  "description": "first task solve from oktagon",
-  "main": "server.js",
+  "description": "Solve second task of Octagon",
+  "main": "app.js",
   "scripts": {
-    "test": "node server.js",
-    "start": "node server.js"
+    "test": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nfixdev/OktagonTasks.git"
   },
   "keywords": [
-    "oktagon",
-    "node.js",
-    "server"
+    "Octagon",
+    "solve",
+    "node.js"
   ],
   "author": "Tozhiev Roman",
   "license": "ISC",

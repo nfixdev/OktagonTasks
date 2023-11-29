@@ -1,7 +1,26 @@
-const http = require("http")
-http.createServer(function(request, response){
-    response.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
-    response.end("<h1>Привет, Октагон!</h1>");
-}).listen(3000, "127.0.0.1", function(){
-    console.log("Сервер начал прослушивание запросов на порту 3000");
+const express = require("express");
+const app = express();
+app.get("/", function(_, response){
+    response.send("<h1>Hello, world!</h1>");
 });
+
+app.use("/static", function(_, response){
+    response.json('{header: "Hello", body: "Octagon NodeJS Test"}');
+});
+
+app.use("/dynamic", function(request, response){
+    const a = request.query.a;
+    const b = request.query.b;
+    const c = request.query.c;
+    if(a == null || b == null || c == null || 
+        Number.isNaN(parseInt(a)) || 
+        Number.isNaN(parseInt(b)) ||
+        Number.isNaN(parseInt(c))) {
+        response.json('{header: "Error"}');
+    }
+    else{
+        response.json(`{header: "Calculated", body: "${(parseInt(a)+parseInt(b)+parseInt(c))/3}"}`);
+    }
+});
+
+app.listen(3000);
