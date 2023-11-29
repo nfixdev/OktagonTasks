@@ -1,0 +1,25 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "first task solve from oktagon",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfixdev/OktagonTasks.git"
+  },
+  "keywords": [
+    "oktagon",
+    "node.js",
+    "server"
+  ],
+  "author": "Tozhiev Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfixdev/OktagonTasks/issues"
+  },
+  "homepage": "https://github.com/nfixdev/OktagonTasks#readme"
+}
