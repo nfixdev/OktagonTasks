@@ -1,8 +1,8 @@
 {
-  "name": "third",
+  "name": "octagon_third",
   "version": "1.0.0",
-  "description": "Third solve from octagon",
-  "main": "app.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nfixdev/OktagonTasks/issues"
   },
-  "homepage": "https://github.com/nfixdev/OktagonTasks#readme"
+  "homepage": "https://github.com/nfixdev/OktagonTasks#readme",
+  "dependencies": {
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.1"
+  }
 }
